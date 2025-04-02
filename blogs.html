@@ -22,6 +22,64 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .blog-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .blog-section h1 {
+            font-weight: 800;
+            font-size: 2.5rem;
+        }
+        .blog-divider {
+            width: 60px;
+            height: 4px;
+            background-color: #007bff;
+            margin: 10px auto 20px;
+            border-radius: 2px;
+        }
+        .blog-card {
+            border: none;
+            border-radius: 12px;
+            transition: transform 0.2s ease-in-out;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .card-img-top {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+        .card-text {
+            font-size: 0.95rem;
+            color: #6c757d;
+        }
+        .read-more-btn {
+            background-color: #007bff;
+            color: white;
+            border-radius: 20px;
+            padding: 8px 16px;
+            transition: background 0.3s ease;
+        }
+        .read-more-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 
   </head>
 
@@ -72,47 +130,49 @@
       </div>
     </nav>
 
-    <!-- <div class="container-fluid p-0"> -->
-        <header class="container text-center my-5">
-            <h1 class="text-uppercase">My Medium Blogs</h1>
-        </header>
+ 
     
-        <div class="container">
-            <div class="row">
-                <!-- Medium Post 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card mb-4 shadow-sm">
-                        <a href="https://medium.com/@codetops/your-post-link" target="_blank">
-                            <img class="card-img-top" src="https://cdn-images-1.medium.com/max/800/your-post-image.jpg" alt="Post Title">
+    <section class="blog-section">
+        <h1>My Medium Blogs</h1>
+        <div class="blog-divider"></div>
+    </section>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Medium Post 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card blog-card">
+                    <a href="https://medium.com/@codetops/your-post-link" target="_blank">
+                        <img class="card-img-top" src="https://cdn-images-1.medium.com/max/800/your-post-image.jpg" alt="Post Title">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Post Title Here</h5>
+                        <p class="card-text">Short description of the post goes here. Make it engaging!</p>
+                        <a href="https://medium.com/@codetops/your-post-link" target="_blank" class="btn read-more-btn">
+                            Read More <i class="fa fa-arrow-right"></i>
                         </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Post Title Here</h5>
-                            <p class="card-text">Short description of the post goes here. Make it engaging!</p>
-                            <a href="https://medium.com/@codetops/your-post-link" target="_blank" class="btn btn-primary">
-                                Read More <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
-    
-                <!-- Medium Post 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card mb-4 shadow-sm">
-                        <a href="https://medium.com/@codetops/another-post-link" target="_blank">
-                            <img class="card-img-top" src="https://cdn-images-1.medium.com/max/800/another-post-image.jpg" alt="Another Post">
+            </div>
+
+            <!-- Medium Post 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card blog-card">
+                    <a href="https://medium.com/@codetops/another-post-link" target="_blank">
+                        <img class="card-img-top" src="https://cdn-images-1.medium.com/max/800/another-post-image.jpg" alt="Another Post">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Another Blog Post</h5>
+                        <p class="card-text">Another short description about this blog post.</p>
+                        <a href="https://medium.com/@codetops/another-post-link" target="_blank" class="btn read-more-btn">
+                            Read More <i class="fa fa-arrow-right"></i>
                         </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Another Blog Post</h5>
-                            <p class="card-text">Another short description about this blog post.</p>
-                            <a href="https://medium.com/@codetops/another-post-link" target="_blank" class="btn btn-primary">
-                                Read More <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      
+    </div>
+
      
 
       
